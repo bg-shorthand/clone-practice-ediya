@@ -1,0 +1,127 @@
+/* 공통 전체 */
+.news__notice {
+  padding: 40px 20px;
+}
+/* 공통 제목 */
+.news-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  background: url(../images/icon-news-headline.svg) no-repeat 0 100%;
+  text-indent: .5em;
+}
+/* 공통 검색 */
+.news__press-form {
+  padding: 20px 0;
+  border-bottom: 2px solid darkblue;
+  position: relative;
+}
+.press-search-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.press-search-container select {
+  background: rgb(230, 228, 228);
+  border: none;
+  padding-right: 20px;
+}
+.keyword {
+  border: none;
+  border-bottom: 1px solid black;
+  line-height: 1.5em;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.button-search {
+  width: 30px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+}
+.icon-search {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/icon-search.svg) no-repeat 0 0;
+}
+/* 표 */
+.news__press-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+}
+.news__press-table td{
+  border-top: 1px black solid;
+}
+.news__press-table tr th:first-child,
+.news__press-table tr td:first-child {
+  min-width: 4em;
+}
+.press-thumbnail {
+  float: left;
+}
+.press-article {
+  text-align: left;
+}
+.press-article dt {
+  color: #24338d;
+}
+.press-article dd {
+  margin-top: 5px;
+  color: #878787;
+}
+.pagination-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.pagination-container svg path {
+  fill: darkblue;
+}
+.pagination {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: max-content;
+}
+.pagination a {
+  margin: 0 5px;
+  padding: 0;
+}
+
+
+
+@media all and (max-width: 767px) {
+  /* 모바일 영역 */
+  .news {
+    width: 100%;
+  }
+  .press-thumbnail {
+    display: none;
+  }
+  .press-article dd {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 240px;
+  }
+}
+@media all and (min-width: 768px) {
+  /* 데스크탑 영역 */
+  .news__notice {
+    width: 740px;
+    margin: 0 auto;
+  }
+  .press-search-container {
+    width: 50%;
+    position: relative;
+    left: 50%;
+  }
+  .news__press-table {
+    width: 100%
+  }
+}
