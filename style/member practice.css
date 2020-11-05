@@ -1,0 +1,163 @@
+main {
+  width: 100%;
+  background: url(../images/coffee-desktop.jpg);
+  background-position: 50% 0;
+}
+.login-container {
+  text-align: center;
+  color: white;
+  padding: 0 20px 50px;
+}
+.login-heading {
+  margin: 0;
+  font-weight: 100;
+  padding: 100px 0 50px;
+  font-size: 4rem;
+}
+.login-brief {
+  margin: 10px 0;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+.login-brief[lang="en"] {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.login-form {
+  margin-top: 50%;
+}
+.login-email, .login-pwd {
+  position: relative;
+}
+.login-pwd {
+  margin-top: 10px;
+}
+.login-email label, .login-pwd label {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  padding-left: 1em;
+  transition: all .4s;
+}
+.--focus label {
+  font-size: 1rem;
+  top: 0;
+}
+.login-email input, .login-pwd input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  padding: 5px 10px;
+  color: white;
+  margin-bottom: 1.4rem;
+}
+.--valid input {
+  background: url(../images/icon-checked.svg) no-repeat 100% 50%;
+}
+.--invalid input {
+  background: url(../images/icon-warning.svg) no-repeat 100% 50%;
+  margin-bottom: 0;
+}
+.pwd-view {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  transition: all .4s;
+}
+.--valid .pwd-view {
+  right: 15px
+}
+.--invalid .pwd-view {
+  right: 15px
+}
+.pwd-view span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/icon-visible.svg) no-repeat 50% 50%;
+}
+.--focus .pwd-view {
+  display: block;
+}
+.email-error, .pwd-error {
+  display: none;
+  font-size: 1.2rem;
+}
+.--invalid .email-error, .--invalid .pwd-error {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.save-btn {
+  text-align: left;
+  position: relative;
+}
+.save-email {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  border: none;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+.checkbox-bg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-un-checked-square.svg) no-repeat;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.save-email:checked + .checkbox-bg {
+  background-image: url(../images/icon-checked-square.svg);
+}
+.save-btn label {
+  font-size: 1.4rem;
+}
+.member button, .member a {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  color: gray;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+.member a {
+  margin-top: 5px;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: gray;
+}
+
+@media all and (max-width: 767px) {
+  main {
+    background-image: url(../images/coffee-mobile.jpg);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .login-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .member button, .member a {
+    width: 45%;
+  }
+}

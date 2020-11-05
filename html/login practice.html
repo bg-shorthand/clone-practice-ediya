@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 - 이디야 커피(Ediya Coffee)</title>
+    <meta name="description" content="이디야 커피 브랜드 사이트 (학습용) 홈페이지입니다." />
+    <meta name="keywords" content="이디야, 커피, 브랜드, 사이트, 학습용, 홈페이지, 이듬, 블렌디드 러닝" />
+    <meta name="author" content="이듬(E.UID)" />
+  
+    <link rel="preload" as="style" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" />
+    <link rel="preload" as="style" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preload" as="style" href="./../style/style.css" />
+  
+    <!-- 스타일링 -->
+    <link rel="stylesheet" href="./../style/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body class="membership">
+    <div class="app-header-container">
+      <header class="app-header">
+        <h1 class="brand">
+          <a href="./index.html"><img src="./../images/brand.svg" alt="Ediya Coffee" class="respons" /></a>
+        </h1>
+        <button type="button" class="button is-open-menu" aria-label="메뉴 열기" title="메뉴 열기">
+          <span class="ir"></span>
+        </button>
+        <nav class="app-navigation">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+  
+          <ul class="reset-list">
+            <li><a href="./views/login-fds.html">로그인</a></li>
+            <li><a href="./views/signup-fds.html">회원 가입</a></li>
+            <li><a href="./views/ui-design.html">이디야 디자인</a></li>
+            <li><a href="./views/beverage-fds.html">이디야 음료</a></li>
+            <li><a href="./views/news-fds.html">이디야 뉴스</a></li>
+            <li><a href="./views/store-fds.html">매장 찾기</a></li>
+          </ul>
+  
+          <button type="button" class="button is-close-menu" title="메뉴 닫기" aria-label="메뉴 닫기">
+            <span class="close" aria-hidden="true">×</span>
+          </button>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="login-container">
+        <h1 class="login-heading">로그인</h1>
+        <p lang="en" class="login-brief">Welcome, Ediya Coffee</p>
+        <p class="login-brief">이디야커피에 오신 것을 환영합니다.</p>
+        <form class="login-form">
+          <fieldset>
+            <legend>로그인 폼</legend>
+            <div class="login-email --focus --valid --invalid">
+              <label for="loginEmail">이메일</label>
+              <input type="email" id="loginEmail">
+              <div class="email-error" aria-labelledby="loginEmail">이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</div>
+            </div>
+            <div class="login-pwd --focus --valid --invalid">
+              <label for="loginPwd">패스워드</label>
+              <input type="password" id="loginPwd">
+              <div class="pwd-error" aria-labelledby="loginPwd">스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</div>
+              <button class="pwd-view"><span></span></button>
+            </div>
+            <div class="save-btn">
+              <input type="checkbox" class="save-email" id="saveEmail"></input>
+              <span class="checkbox-bg"></span>
+              <label for="saveEmail">이메일 저장</label>
+            </div>
+          </fieldset>
+          <section class="member">
+            <button type="submit">로그인</button>
+            <a href="#">회원가입</a>
+          </section>
+        </form>
+      </div>
+    </main>
+    <div class="app-footer-container">
+      <footer class="app-footer">
+        <div class="footer-brand">
+          <img src="../images/brand-dark.svg" alt="EDIYA COFFEE" />
+        </div>
+        <ul class="guide-list reset-list">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">멤버스 이용약관</a></li>
+          <li><a href="#">가맹 안내</a></li>
+          <li><a href="#">대량쿠폰구매</a></li>
+          <li><a href="#">채용안내</a></li>
+          <li><a href="#">고객의 소리</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">점주의 방</a></li>
+        </ul>
+        <address class="address">
+          <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+          <span><b>TEL : </b>02-543-6467</span>
+          <span><b>FAX : </b>02-543-7191</span>
+          <span><b>사업자등록번호 : </b>107-86-16302</span>
+          <span><b>통신판매업 신고 : </b>강남 제 002519호</span>
+          <span><b>대표이사 : </b>문창기</span>
+        </address>
+        <small class="copyright">&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</small>
+      </footer>
+    </div>
+
+  </body>
+
+</html>
